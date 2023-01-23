@@ -1,16 +1,24 @@
+import data from "./data";
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header>
         <a href="/">samp</a>
       </header>
       <main>
-        list products
+        <h1>Produse recomandate</h1>
+        {data.products.map((product) => ( 
+          <div>
+            <img src ={product.image} alt = {product.name} />
+            <p>{product.name}</p>
+            <p>{product.price}</p>
+          </div>
+          ))}
       </main>
     </div>
   );
-}
+};
 
 export default App;
