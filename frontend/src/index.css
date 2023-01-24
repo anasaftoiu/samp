@@ -13,16 +13,7 @@ body {
 }
 
 
-header {
-  background-color: #17191E;
-  padding: 1rem;
-}
 
-header a{
-  color: azure;
-  font-weight: bold;
-  text-decoration: none;
-}
 
 main{
   padding: 1rem;
