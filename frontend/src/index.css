@@ -13,16 +13,24 @@ body {
 }
 
 
-
-
-main{
-  padding: 1rem;
+.site-container{
+  min-height: 100vh;
 }
 
+main{
+  flex: 1;
+}
+.btn-primary{
+  background-color: #f0c040;
+  color: #000000;
+}
 .products{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.rating span{
+  color: #ffc000;
 }
 .product{
   border: 1px #404040 solid ;
@@ -34,4 +42,7 @@ main{
 }
 .product-info {
   padding: 1rem;
+}
+.img-large{
+  max-width: 100%;
 }

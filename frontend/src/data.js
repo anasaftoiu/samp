@@ -1,16 +1,16 @@
 const data = {
   products : [
     {
-      name : 'Supa instant Shrimp Cup NS 67g',
-      slug : 'Supa instant Shrimp Cup NS 67g',
-      category : 'Noodles si noodles instant',
-      image : '/images/supaInstantShrimpCupNs.jpg',
-      price : '11.00 RON',
+      name : 'Creveți sălbatici Carabineros 1kg',
+      slug : 'SCreveți sălbatici Carabineros 1kg',
+      category : 'Fructe de mare',
+      image : '/images/creveti2-carabineros.jpg',
+      price : '1.000.00 RON',
       countInStock : 10,
-      brand : 'Nongshim',
+      brand : 'Alfredo',
       rating : 4.5 ,
       numReviews : 10 ,
-      description : 'Supa instant Shrimp Cup NS 67g'
+      description : 'Creveți sălbatici Carabineros 1kg'
     },
     {
       name : 'Prajitura Choco Pie cu cacao LOTTE (12 x 28g) 336g',
