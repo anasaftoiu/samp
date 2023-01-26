@@ -4,6 +4,7 @@ import logger from 'use-reducer-logger';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Product from "../components/Product";
+import { Helmet } from "react-helmet-async";
 //import data from "../../../backend/data";
 //import data from "../data.js";
 
@@ -41,7 +42,10 @@ function HomeScreen() {
     };
     fetchData();
   }, []);
-  return <div>
+  return<div>
+    <Helmet>
+      <title>Samp</title>
+    </Helmet>
     <h1>Produse recomandate</h1>
     <div className="products">
       <Row>

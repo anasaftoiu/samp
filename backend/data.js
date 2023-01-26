@@ -6,7 +6,7 @@ const data = {
       category : 'Fructe de mare',
       image : '/images/creveti2-carabineros.jpg',
       price : '1.000.00 RON',
-      countInStock : 10,
+      countInStock : 1,
       brand : 'Alfredo',
       rating : 4.5 ,
       numReviews : 10 ,

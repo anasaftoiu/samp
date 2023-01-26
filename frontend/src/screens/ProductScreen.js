@@ -6,7 +6,10 @@ import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
 import Rating from "../components/Rating";
+import { Helmet } from "react-helmet-async";
+
 
 
 const reducer = (state, action) => {
@@ -59,14 +62,19 @@ function ProductScreen() {
             </Col>
             <Col md={3}>
               <ListGroup variant="flush">
+                <ListGroup.Item>
+                  <Helmet>
+                    <title>{product.name}</title>
+                  </Helmet>
+                  <h1>{product.name}</h1>
+              </ListGroup.Item> 
               <ListGroup.Item>
-                  <h1>{ product.name}</h1>
                   <Rating
                     rating={product.rating}
                     numReviews={product.numReviews}
                   ></Rating>   
-                </ListGroup.Item>
-                <ListGroup.Item>Pret : {product.price}</ListGroup.Item>
+              </ListGroup.Item>
+              <ListGroup.Item>Pret : {product.price}</ListGroup.Item>
                 <ListGroup.Item>
                   Descriere:
                   <p>{ product.description}</p>
@@ -94,6 +102,16 @@ function ProductScreen() {
                           )}</Col>
                       </Row>
                     </ListGroup.Item>
+
+                    {product.countInStock > 0 && (
+                      <ListGroup.Item>
+                        <div className="d-grid">
+                          <Button variant="primary">
+                           Adaugă in coş
+                          </Button>
+                        </div>
+                      </ListGroup.Item>
+                    )}
                   </ListGroup>
                 </Card.Body>
               </Card>
