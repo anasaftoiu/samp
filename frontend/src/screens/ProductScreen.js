@@ -52,12 +52,21 @@ function ProductScreen() {
   }, [slug]);
 
   const { state, dispatch: ctxDispatch } = useContext(Store);
-  const addToCartHandler = () => {
+  const { cart } = state;
+  const addToCartHandler = async () => {
+    const existItem = cart.cartItems.find((x) => x._id === product._id);
+    const quantity = existItem ? existItem.quantity + 1 : 1;
+    const { data } = await axios.get(`/api/products/${product._id}`);
+    if (data.countInStock < quantity) {
+      window.alert('Îmi pare rău. Produsul este epuizat.');
+      return;
+    }
     ctxDispatch({
-      type: 'CART_ADD_ITEM', payload: { ...product, quntity: 1 }
+      type: 'CART_ADD_ITEM',
+      payload: { ...product, quantity },
     });
 
-  }
+  };
   return loading ? (
     <LoadingBox />
   ) : error ? (

@@ -1,6 +1,7 @@
 const data = {
   products : [
     {
+      _id:'1',
       name : 'Creveți sălbatici Carabineros 1kg',
       slug : 'Creveți sălbatici Carabineros 1kg',
       category : 'Fructe de mare',
@@ -13,6 +14,7 @@ const data = {
       description : 'Creveți sălbatici Carabineros 1kg'
     },
     {
+      _id:'2',
       name : 'Prajitura Choco Pie cu cacao LOTTE (12 x 28g) 336g',
       slug : 'Prajitura Choco Pie cu cacao LOTTE (12 x 28g) 336g',
       category : 'Noodles si noodles instant',
@@ -25,6 +27,7 @@ const data = {
       description : 'Prajitura Choco Pie cu cacao LOTTE (12 x 28g) 336g'
     },
     {
+      _id:'3',
       name : 'Taitei din grau (ramen noodles) ADOMI 500g',
       slug : 'Taitei din grau (ramen noodles) ADOMI 500g',
       category : 'Noodles si noodles instant',
@@ -37,6 +40,7 @@ const data = {
       description : 'Taitei din grau (ramen noodles) ADOMI 500g'
     },
     {
+      _id:'4',
       name : 'Lotte Snow Almond Pepero 32g',
       slug : 'Lotte Snow Almond Pepero 32g',
       category : 'Noodles si noodles instant',
@@ -49,6 +53,7 @@ const data = {
       description : 'Lotte Snow Almond Pepero 32g'
     },
     {
+      _id:'5',
       name : 'Supa instant Extra Spicy Yeol Ramen OTT 120g',
       slug : 'Supa instant Extra Spicy Yeol Ramen OTT 120g',
       category : 'Noodles si noodles instant',
@@ -61,6 +66,7 @@ const data = {
       description : 'Supa instant Extra Spicy Yeol Ramen OTT 120g'
     },
     {
+      _id:'6',
       name : 'Taitei spicy sesame Obento 240g',
       slug : 'Taitei spicy sesame Obento 240g',
       category : 'Noodles si noodles instant',
@@ -73,6 +79,7 @@ const data = {
       description : 'Taitei spicy sesame Obento 240g'
     },
     {
+      _id:'7',
       name : 'Mochi asortate YL 450g',
       slug : 'Mochi asortate YL 450g',
       category : 'Noodles si noodles instant',
@@ -85,6 +92,7 @@ const data = {
       description : 'Mochi asortate YL 450g'
     },
     {
+      _id:'8',
       name : 'Pasta de creveti MAE PRANOM 100g',
       slug : 'Pasta de creveti MAE PRANOM 100g',
       category : 'Noodles si noodles instant',
@@ -97,6 +105,7 @@ const data = {
       description : 'Pasta de creveti MAE PRANOM 100g'
     },
     {
+      _id:'9',
       name : 'Alge nori KC 2gx10 buc',
       slug : 'Alge nori KC 2gx10 buc',
       category : 'Noodles si noodles instant',
