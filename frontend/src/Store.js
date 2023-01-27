@@ -4,7 +4,8 @@ export const Store = createContext();
 
 
 const initialState = {
- cart: {
+
+  cart: {
     cartItems: [],
   },
 };

@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
+import HomeScreen from  './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Badge from 'react-bootstrap/Badge';
