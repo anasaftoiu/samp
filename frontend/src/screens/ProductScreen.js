@@ -111,7 +111,7 @@ function ProductScreen() {
                     <ListGroup.Item>
                       <Row>
                         <Col>Pret :</Col>
-                        <Col>{ product.price}</Col>
+                        <Col>{ product.price} RON</Col>
                       </Row>
                     </ListGroup.Item>
                     <ListGroup.Item>
