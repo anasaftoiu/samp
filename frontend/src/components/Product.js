@@ -30,27 +30,26 @@ function Product(props) {
   };
   
 
-
-  return ( 
-  <Card>
-    <Link to = {`/product/${product.slug}`}>
-      <img src ={product.image} className="card-img-top" alt = {product.name} />
+  return (
+    <Card>
+      <Link to={`/product/${product.slug}`}>
+        <img src={product.image} className="card-img-top" alt={product.name} />
       </Link>
       <Card.Body>
-      <Link to = {`/product/${product.slug}`}>
-        <Card.Title>{product.name}</Card.Title>
+        <Link to={`/product/${product.slug}`}>
+          <Card.Title>{product.name}</Card.Title>
         </Link>
         <Rating rating={product.rating} numReviews={product.numReviews} />
-        <Card.Title>{product.price} RON</Card.Title>
+        <Card.Text>{product.price} RON</Card.Text>
         {product.countInStock === 0 ? (
           <Button variant="light" disabled>
-            Epuizat
+            Produs epuizat
           </Button>
         ) : (
-          <Button onClick={() => addToCartHandler(product)}>Adaugă in coş</Button>
+          <Button onClick={() => addToCartHandler(product)}>Adauga in cos</Button>
         )}
       </Card.Body>
-  </Card> 
-);
+    </Card>
+  );
 }
 export default Product;
